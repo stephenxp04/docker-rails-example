@@ -36,8 +36,17 @@ gem "redis", "~> 5.2"
 # Use Active Storage variants
 # gem "image_processing", "~> 1.2"
 
-# Execute jobs in the background
-gem "sidekiq", "~> 7.2"
+# Execute jobs in the background [https://github.com/mperham/sidekiq]
+gem "sidekiq", "~> 7.3"
+
+# HTTP client library
+gem "httparty"
+
+# SEO-friendly meta tags
+gem "meta-tags"
+
+# HTML, XML, SAX, and Reader parser
+gem "nokogiri"
 
 # HTTP client library
 gem "httparty"

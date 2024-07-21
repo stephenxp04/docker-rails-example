@@ -26,27 +26,27 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `cssbundling-rails` to `1.4.0`
 - Update `jsbundling-rails` to `1.3.0`
-- Update `minitest` to `5.23.1`
+- Update `minitest` to `5.24.1`
 - Update `pg` to `1.5.6`
 - Update `puma` to `6.4.2`
 - Update `rack-mini-profiler` to `3.3.0`
 - Update `rack-mini-profiler` to `3.3.1`
-- Update `rack` to `3.0.11`
+- Update `rack` to `3.1.7`
 - Update `rails` to `7.1.3.4`
 - Update `redis` to `5.2.0`
-- Update `sidekiq` to `7.2.4`
+- Update `sidekiq` to `7.3.0`
 - Update `stimulus-rails` to `1.3.3`
-- Update `turbo-rails` to `2.0.5`
+- Update `turbo-rails` to `2.0.6`
 
 #### Front-end dependencies
 
 - Update `@hotwired/stimulus` to `3.2.2`
-- Update `@hotwired/turbo-rails` to `8.0.4`
+- Update `@hotwired/turbo-rails` to `8.0.5`
 - Update `autoprefixer` to `10.4.19`
-- Update `esbuild` to `0.21.5`
+- Update `esbuild` to `0.23.0`
 - Update `postcss-import` to `16.1.0`
-- Update `postcss` to `8.4.38`
-- Update `tailwindcss` to `3.4.4`
+- Update `postcss` to `8.4.39`
+- Update `tailwindcss` to `3.4.6`
 
 ## [0.8.0] - 2023-05-13
 

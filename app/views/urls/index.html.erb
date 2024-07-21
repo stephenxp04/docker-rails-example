@@ -1,0 +1,23 @@
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-2xl font-bold mb-4">URL Shortener</h1>
+
+  <%= turbo_frame_tag "url-form" do %>
+    <%= form_with model: @url, remote: true, html: { class: "space-y-4" } do |form| %>
+      <div>
+        <%= form.label :target_url, "Original URL", class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :target_url, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+      </div>
+      <div>
+        <%= form.submit "Shorten URL", class: "px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-md hover:bg-indigo-700" %>
+      </div>
+    <% end %>
+  <% end %>
+  
+  <div data-controller="urls">
+    <div id="success-message" data-urls-target="successMessage" class="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded" style="display: none;"></div>
+    <div id="urls-table" data-urls-target="urlsTable">
+      <%= render partial: "urls_table", locals: { urls: @urls } %>
+    </div>
+  </div>
+
+</div>

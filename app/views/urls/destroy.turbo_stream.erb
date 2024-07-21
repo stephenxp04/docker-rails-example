@@ -1,0 +1,4 @@
+<%= turbo_stream.remove "url_#{@url.id}" %>
+<%= turbo_stream.replace "urls-table" do %>
+  <%= render partial: "urls_table", locals: { urls: @urls } %>
+<% end %>
